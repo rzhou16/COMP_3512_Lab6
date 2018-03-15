@@ -36,6 +36,7 @@ public:
 		double candidate_distance = 0.0;
 		for (int i = 0; i < poplulation_size; i++) {
 			candidate_distance = population[i].get_tour_distance();
+
 		}
 	}
 };
