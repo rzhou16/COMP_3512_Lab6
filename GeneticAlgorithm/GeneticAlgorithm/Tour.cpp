@@ -14,7 +14,7 @@ Tour::Tour(double _fitness, std::vector<City>& _permutation) {
 
 Tour::Tour(const Tour& _tour) {
 	fitness = _tour.fitness;
-	for (int i = 0; i < permutation.size(); i++) {
+	for (int i = 0; i < permutation.size(); ++i) {
 		permutation[i] = _tour.permutation[i];
 	}
 }
@@ -63,7 +63,6 @@ void Tour::swap_cities(int index_one, int index_two)
 	City temp = permutation[index_one];
 	permutation[index_one] = permutation[index_two];
 	permutation[index_two] = temp;
-	return;
 }
 
 /*

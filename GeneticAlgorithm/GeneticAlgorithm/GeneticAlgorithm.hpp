@@ -23,7 +23,7 @@ public:
 	void init();
 	int determine_fitness(std::vector<Tour>& population, int poplulation_size) const;
 	std::vector<Tour> select_parents(std::vector<Tour>& population);
-	Tour& crossover(std::vector<Tour>& parents);
+	Tour crossover(std::vector<Tour>& parents);
 	void mutate(std::vector<Tour>& population);
 	void run();
 };
