@@ -14,7 +14,7 @@ public:
 	~Tour();
 	Tour(double _fitness, std::vector<City>& _permutation);
 	Tour(const Tour& _tour);
-	std::vector<City> get_permutation();
+	std::vector<City>& get_permutation();
 	int contains_city(int length, City& candidate_city);
 	void swap_cities(int index_one, int index_two);
 	double get_tour_distance();
