@@ -29,4 +29,13 @@ public:
 			population.push_back(Tour(0, cities_to_visit));
 		}
 	}
+
+	int determine_fitnessc(std::vector<Tour>& population, int poplulation_size) const {
+		int index_of_shortest_tour = 0;
+		double shortest_tour_in_population = (double)RAND_MAX; // Begin by assuming distance is enormous
+		double candidate_distance = 0.0;
+		for (int i = 0; i < poplulation_size; i++) {
+			candidate_distance = population[i].get_tour_distance();
+		}
+	}
 };

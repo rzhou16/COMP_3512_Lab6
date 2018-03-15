@@ -13,9 +13,12 @@ public:
 	}
 
 	City(City& _city) {
-		using std::swap;
-		swap(name, _city.name);
-		swap(x_coordinate, _city.x_coordinate);
-		swap(y_coordinate, _city.y_coordinate);
+		name = _city.name;
+		x_coordinate = _city.x_coordinate;
+		y_coordinate = _city.y_coordinate;
 	}
+
+	int get_x() { return x_coordinate; }
+	int get_y() { return y_coordinate; }
+
 };
