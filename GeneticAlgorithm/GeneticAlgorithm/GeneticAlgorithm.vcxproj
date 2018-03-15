@@ -150,6 +150,8 @@
     <ClCompile Include="GeneticAlgorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="City.hpp" />
+    <ClInclude Include="GeneticAlgorithm.hpp" />
     <ClInclude Include="Tour.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

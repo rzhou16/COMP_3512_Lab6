@@ -23,5 +23,11 @@
     <ClInclude Include="Tour.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="City.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneticAlgorithm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
