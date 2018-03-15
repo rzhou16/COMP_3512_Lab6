@@ -1,21 +1,21 @@
 #pragma once
-#include <string>
 
 class City {
 private:
-	std::string name;
+	char name;
 	int  x_coordinate;
 	int  y_coordinate;
 public:
-	void set_name(std::string& _name) {
+	City(char _name, int _x, int _y) {
 		name = _name;
+		x_coordinate = _x;
+		y_coordinate = _y;
 	}
 
-	void set_x_coordinate(int _x_coordinate) {
-		x_coordinate = _x_coordinate;
-	}
-
-	void set_y_coordinate(int _y_coordinate) {
-		y_coordinate = _y_coordinate;
+	City(City& _city) {
+		using std::swap;
+		swap(name, _city.name);
+		swap(x_coordinate, _city.x_coordinate);
+		swap(y_coordinate, _city.y_coordinate);
 	}
 };
