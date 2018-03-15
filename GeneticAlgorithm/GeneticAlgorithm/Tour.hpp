@@ -54,4 +54,8 @@ public:
 		return sqrt(pow((double)(a.get_x() - b.get_x()), 2.0) +
 			pow((double)(a.get_y() - b.get_y()), 2.0));
 	}
+
+	void set_fitness(double _fitness) {
+		fitness = _fitness;
+	}
 };
