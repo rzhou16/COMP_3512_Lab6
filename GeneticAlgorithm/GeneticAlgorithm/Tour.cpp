@@ -49,10 +49,10 @@ int Tour::contains_city(int length, City& candidate_city)
 
 /*
 * Swaps the cities at the specified indices in the
-* specified array (tour) of cities.
+* specified vector (tour) of cities.
 * PARAM:  int index
 * PARAM:  int index
-* PARAM:  pointer to an array of struct city
+* PARAM:  pointer to a vector of struct city
 * PRE:    both indices >= 0
 * PRE :   both indices < CITIES_IN_TOUR
 * POST:   the cities at the specified indices in the
@@ -67,7 +67,7 @@ void Tour::swap_cities(int index_one, int index_two)
 
 /*
 * Returns the total distance traveled on the
-* specified array (tour) of cities.
+* specified vector (tour) of cities.
 * PARAM:  tour contains a set of CITIES_IN_TOUR cities
 * PRE:    NULL
 * POST:   NULL

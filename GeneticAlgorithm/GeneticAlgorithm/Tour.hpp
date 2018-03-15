@@ -7,7 +7,7 @@ class Tour {
 private:
 	static constexpr int CITIES_IN_TOUR = 20;
 	double fitness; // Fitness rating
-	std::vector<City> permutation{ CITIES_IN_TOUR }; // An array of CITIES_IN_TOUR cities 
+	std::vector<City> permutation{ CITIES_IN_TOUR }; // A vector of CITIES_IN_TOUR cities 
 
 public:
 	Tour();
