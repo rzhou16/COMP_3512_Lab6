@@ -26,9 +26,7 @@ public:
 		}
 
 		for (int i = 0; i < POPULATION_SIZE; i++) {
-			for (int j = 0; j < CITIES_IN_TOUR; ++j) {
-				population.push_back(Tour())
-			}
+			population.push_back(Tour(0, cities_to_visit));
 		}
 	}
 };
