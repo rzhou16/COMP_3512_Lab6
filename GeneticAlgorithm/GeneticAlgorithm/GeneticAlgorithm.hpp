@@ -22,7 +22,13 @@ public:
 	void init() {
 		srand(time(NULL));
 		for (int i = 0; i < CITIES_IN_TOUR; i++) {
-			
+			cities_to_visit.push_back(City((char)(i + ASCII_OFFSET), rand() % (MAP_BOUNDARY + 1), rand() % (MAP_BOUNDARY + 1)));
+		}
+
+		for (int i = 0; i < POPULATION_SIZE; i++) {
+			for (int j = 0; j < CITIES_IN_TOUR; ++j) {
+				population.push_back(Tour())
+			}
 		}
 	}
 };
