@@ -1,1 +1,1 @@
-# COMP_3512_Lab6
+Genetic Algorithm
